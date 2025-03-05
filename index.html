@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <meta name="description" content="SkyCast - Get the latest weather updates for any city.">
+    <title>SkyCast - Weather Forecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <button id="btnLocation">Change location</button>
+    <header>
+        <h1 id="title"><i class="fa-solid fa-sun" style="color: #fe5016; padding-right: 0.5rem"></i>SkyCast</h1>
+        <form id="weather-form">
+            <input type="text" id="weather-input" class="header-input" name="weather-input" placeholder="Search by City" aria-label="Enter city name">
+            <button type="submit" id="btnLocation" class="header-input">Search</button>
+            <div id="current-weather-info" class="header-input"></div>
+        </form>
+    </header>
 
-    <div id="forecastContainer"></div>
+    <main>
+        <section id="forecastContainer"></section>
+    </main>
+
+    <footer id="footer">
+        <section class="footer-content">
+            <p>&copy; 2025 SkyCast. All rights reserved.</p>
+        </section>
+    </footer>
 
     <script src="./dist/script.min.js"></script>
 </body>
